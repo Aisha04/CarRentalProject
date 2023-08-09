@@ -1,0 +1,97 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Client.master.vb" Inherits="CarsRental.Client" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="~/Main.css" type="text/css" />
+   <link rel="stylesheet" href="~/client.css" type="text/css" />
+ 
+
+</head>
+<body >
+    <form id="form1" runat="server">
+        <div>
+           <table class="table">
+                <tr>
+                    <td colspan="3" class="logo">Cars Rental</td>
+                    </tr>
+                <tr>
+                    <td colspan="3">
+                        <asp:Image ID="Image1" runat ="server" class="image1" ImageUrl="~/Images/car2.jpg" />
+                    </td>
+                </tr>
+                
+             <tr class="nav">
+                       <td class="menu">
+                            
+                        <asp:Menu ID="Menu1" runat="server"  DynamicHorizontalOffset="2" Orientation="Horizontal" ForeColor="white" Font-Names="Verdana" Font-Size="0.8em" StaticSubMenuIndent="10px">
+                   <StaticMenuItemStyle HorizontalPadding="50px" VerticalPadding="15px" />
+              <DynamicHoverStyle BackColor="#0099CC" BorderColor="#0099CC" ForeColor="#0099CC" />
+                             <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+        <DynamicMenuStyle BackColor="#B5C7DE" />
+        <StaticSelectedStyle BackColor="#507CD1" />
+        <DynamicSelectedStyle BackColor="#507CD1" />
+        <DynamicMenuItemStyle HorizontalPadding="50px" VerticalPadding="15px" />
+                           
+                            <Items>
+                                
+                                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Cars" Value="Cars" NavigateUrl="~/cars.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="About" Value="About"></asp:MenuItem>
+                                <asp:MenuItem Text="FAQs" Value="FAQs"></asp:MenuItem>
+                                 <asp:MenuItem Text="Contacts" Value="Contacts"></asp:MenuItem>
+                            </Items>
+                               <StaticHoverStyle BackColor="#284E98" ForeColor="White" />       
+                        </asp:Menu>
+                    </td>
+                    <td class="search" >
+                           
+                        <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>&nbsp
+                        <asp:Button ID="Button1" runat="server" Text="Search" />&nbsp&nbsp
+                          <asp:Image ID="Image2" runat ="server" class="image" ImageUrl="~/Images/cart.png" />
+                   </td>
+                    <td class="signin">
+                        <asp:button ID="sign" runat="server" text="SignIn" class="sign"/>
+                   </td>
+                </tr>
+                  
+                 <tr>
+                     <td>
+                         <asp:Label ID="lblWelcome" runat="server" ForeColor="White" Style=" font-weight:700; font-size:x-large; margin-left:100px;" Text=""></asp:Label>   <br />
+                         
+                     </td>
+                 </tr>
+               
+                <tr>
+                    <td colspan="3" class="container">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+   </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="footer">
+                        
+                          <br />
+                        <div style="text-align:left">
+                            Connect with:<br /><br />
+                            &nbsp&nbsp&nbsp&nbsp Facebook<br />
+                            &nbsp&nbsp&nbsp&nbsp Twitter<br />
+                            &nbsp&nbsp&nbsp&nbsp Google+<br />
+                        </div>
+                        <br />
+                        <div class="footer1">All right Reserved: CopyRight@2018</div>
+                        
+
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+</body>
+</html>

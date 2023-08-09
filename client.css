@@ -1,0 +1,17 @@
+﻿.head{
+    text-align:center;
+    margin-top:10px;
+}
+.sign {
+    background-color:cornflowerblue; 
+    color:black; 
+    font-size:10px; 
+    border-radius:16px; 
+    padding:10px 16px;
+}
+.sign:hover{
+    background-color:darkcyan;
+}
+.image1{
+    height: 550px;
+}

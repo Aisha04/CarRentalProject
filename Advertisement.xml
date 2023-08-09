@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.png</ImageUrl>  
+    <height>60</height>  
+    <width>190</width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>120</Impressions>  
+    <Keyword>Topic1</Keyword>  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <height>90</height>  
+    <width>90</width>  
+    <NavigateUrl>http://www.google.com</NavigateUrl>  
+    <AlternateText>Google</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+  </Ad>  
+</Advertisements>
